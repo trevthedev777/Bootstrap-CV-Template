@@ -6,6 +6,34 @@
     background-color: #676767;
 }
 
+.bg-color-three-reasons {
+    background-color: #ffffff;
+}
+
+.bg-color-personal-info {
+    background-color: #f4f4f4;
+}
+
+.bg-color-skills {
+    background-color: #ffffff;
+}
+
+.bg-color-work-history {
+    background-color: #9b59b6;
+}
+
+.bg-color-contact {
+    background-color: #ffffff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -19,25 +47,30 @@
 }
 
 .ui-menu-color-download {
+    background-color: #d9a81d;
+}
+
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
     background-color: #525252;
+    color: #555555;
 }
 
-.bg-color-three-reasons {
-    background-color: #fff;
-}
 
-.bg-color-personal-info {
-    background-color: #f4f4f4;
-}
-
-.bg-color-work-history {
-    background-color: #9b59b6;
-}
-
-.bg-color-contact {
-    background-color: #fff;
-}
-/*--------------------------------------------Special paddings, margins and Texts*/
+/*--------------------------------------------Special Paddings/Margins/Text*/
 
 h1,
 h2,
@@ -60,22 +93,19 @@ h4 {
     display: inline-block;
 }
 
+
 .row-table {
     display: table;
 }
 
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
-}
-
-.section-heading,
-.history-heading {
+.history-heading,
+.section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
-    margin: 25px 0 40px 0;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
+
 
 /*--------------------------------------------Heading*/
 
@@ -103,7 +133,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .title {
@@ -112,24 +142,15 @@ header {
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: #fff;
-}
-
-.list-inline-item:not(:last-child) {
-    margin: 0;
-}
-
-.menucontainer {
-    font-size: 0;
-}
-
-#nav li {
-    font-size: 14px;
-    padding: 0;
+    color: #ffffff;
 }
 
 #nav {
     margin: 0;
+}
+
+#nav li {
+    padding: 0;
 }
 
 .menuitem {
@@ -141,9 +162,10 @@ header {
 .menuitem a {
     width: 100%;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     height: 120px;
 }
+
 
 .menuitem a i {
     padding-top: 22px;
@@ -163,12 +185,14 @@ header {
     letter-spacing: 2px;
 }
 
-/*--------------------------------------------Hover Css*/
+
+/*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
+
 
 /*--------------------------------------------Footer*/
 
@@ -179,19 +203,19 @@ footer {
     margin: 0;
 }
 
-.cv-pdf i {
-    font-size: 18px;
+footer .cv-pdf i {
     color: #fafafa;
     text-align: center;
+    font-size: 18px;
     padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-}
-
-.cv-pdf i:hover {
-    color: #e84610;
 }
 
 .social-links {
@@ -215,11 +239,11 @@ footer {
 }
 
 .social-links li a i:hover {
-    background-color: #e84610;
+    background: #e84610;
 }
 
 #footer-details {
-    padding: 20px;
+    margin: 20px;
 }
 
 /*--------------------------------------------Three Reasons*/
@@ -244,7 +268,6 @@ footer {
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
-    display: inline-block;
 }
 
 .personal-info-item .key p,
@@ -253,6 +276,7 @@ footer {
 }
 
 .personal-info-item .key {
+    display: inline-block;
     width: 30%;
     margin-right: 21px;
     padding-top: 2px;
@@ -263,9 +287,10 @@ footer {
     font-weight: 700;
 }
 
-.personal-info-item .value p {
-    width: 60%;
+.personal-info-item .value {
+    display: inline-block;
     position: relative;
+    width: 60%;
 }
 
 /*--------------------------------------------Skills*/
@@ -273,28 +298,24 @@ footer {
 .progress {
     position: relative;
     height: 25px;
-    margin-bottom: 4px;
 }
 
 .progress-type {
     position: absolute;
-    left: 0;
+    left: 0px;
     font-weight: 400;
     padding: 3px 30px 2px 10px;
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
 }
 
+
 .progress-section {
     margin: 40px 20px;
 }
 
-/*--------------------------------------------Work History*/
 
-.history-heading {
-    color: #fafafa;
-    margin-bottom: 50px;
-}
+/*--------------------------------------------Work History*/
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
@@ -308,7 +329,7 @@ footer {
     margin: 0;
 }
 
-.timeline-item:before {
+.timeline-item::before {
     content: attr(data-dates);
     position: absolute;
     left: 2.5em;
@@ -316,12 +337,12 @@ footer {
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: .8em;
     padding: 0;
     margin: 0;
 }
 
-.timeline-item:after {
+.timeline-item::after {
     width: 12px;
     height: 12px;
     display: block;
@@ -329,15 +350,20 @@ footer {
     position: absolute;
     left: -6px;
     border-radius: 12px;
-    content: "";
+    content: '';
     background: #fafafa;
 }
 
-.history-items  {
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.history-items {
     margin-bottom: 30px;
 }
 
-/*--------------------------------------------Contact Form*/
+/*--------------------------------------------Contact*/
 
 .contact-heading {
     font-family: "Exo", sans-serif;
@@ -346,24 +372,36 @@ footer {
     margin-bottom: 20px;
 }
 
+
 .center-form {
-    padding: 10px 0 0 0;
+    padding-top: 10px;
     margin: 0 auto;
     max-width: 70%;
 }
 
 button[type="submit"] {
-    margin: 15px 0 20px 0;
-    color: #fafafa;
+    margin-top: 15px;
+    margin-bottom: 20px;
     background-color: #e84610;
-    outline: none;
+    color: #fafafa;
 }
 
-/*--------------------------------------------Media Queiries*/
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
+
+/*--------------------------------------------Media Queries*/
 
 @media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
     .center-form {
-        padding: 30px 0 0 0;
+        padding-top: 30px;
         min-height: 240px;
         margin: 0 auto;
         max-width: 50%;
