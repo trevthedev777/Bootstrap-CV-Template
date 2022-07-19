@@ -1,3 +1,4 @@
+// Initialiaxe the maps function
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 3,
