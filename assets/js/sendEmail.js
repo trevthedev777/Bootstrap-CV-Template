@@ -1,14 +1,20 @@
 // function has one one argument "contactForm"
 function sendMail(contactForm) {
 
-    emailjs.send("service_k3gz7eq","template_46wy6i4",{
-        from_name: contactForm.name.value,
-        project_request: contactForm.projectsummary.value,
-        from_email: contactForm.emailAddress.value
-        })
+    const templateParams = {
+        "from_name": contactForm.name.value,
+        "project_request": contactForm.projectsummary.value,
+        "from_email": contactForm.emailaddress.value
+    };
+
+    const serviceID = "service_golcdlt";
+    const templateID = "template_7qaoafp";
+
+    // Service ID, Template ID, template parameters
+    emailjs.send(serviceID, templateID, templateParams)
         .then(
             function(response) {
-                console.log("SUCESS", response)
+                console.log("SUCCESS", response)
             },
             function(error) {
                 console.log("Error: Unable to send", error)
